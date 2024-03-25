@@ -1,5 +1,8 @@
 /* ------------------ GERAL ----------------- */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +13,6 @@
 }
 
 body {
-  font-family: "Cereal", sans-serif;
   font-size: 17px;
 }
 
@@ -40,6 +42,7 @@ body {
   border-top-left-radius: 50px;
   border-start-end-radius: 50px;
   border-end-start-radius: 50px;
+  box-shadow: 2px 2px 10px #dddddd;
 }
 
 .lista-menu {
@@ -177,12 +180,13 @@ body {
   margin: auto;
   display: flex;
   margin-top: 40px;
+  justify-content: space-between;
 }
 
 #informacoes {
   font-size: 17px;
   display: flex;
-  width: 680px;
+  width: 700px;
   flex-direction: column;
 }
 
@@ -372,10 +376,411 @@ body {
   margin: 20px 0px 50px 0px;
 }
 
-.todas-comodidades p {
+.todas-comodidades a {
   color: #000000;
   display: inline-block;
   padding: 10px 40px;
   border: 1px solid #000000;
   border-radius: 5px;
+}
+
+/* ---------------------- CALENDARIO ------------------- */
+
+#calendario {
+  margin-bottom: 50px;
+}
+
+.calendario-titulo h3 {
+  margin-bottom: 10px;
+}
+.calendario-titulo {
+  margin: 40px 0px 30px 0px;
+}
+
+/* --------------------- RESERVA -------------------- */
+
+.reserva-content {
+  border: 1px solid #dbdbdb;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 2px 2px 10px #dddddd;
+}
+
+.reserva-preco {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.reserva-preco span {
+  font-weight: bold;
+}
+
+.reserva-preco,
+.btn-adicionar-data {
+  border: none;
+  background-color: white;
+}
+
+.reserva-datas {
+  border: 1px solid #888888;
+  border-radius: 5px;
+  width: 320px;
+}
+
+.checkin {
+  border-right: 1px solid #888888;
+  width: 50%;
+  font-size: 13px;
+  padding: 10px 0px 10px 10px;
+}
+
+.checkout {
+  font-size: 13px;
+  width: 50%;
+  padding: 10px 0px 10px 10px;
+}
+
+.reserva-hospedes {
+  padding: 10px 0px 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reserva-hospedes img {
+  margin-right: 10px;
+}
+
+.checkout button,
+.checkin button,
+.reserva-hospedes button {
+  color: #898989;
+}
+
+.reserva-adicionar-data {
+  display: flex;
+  border-bottom: 1px solid #888888;
+}
+
+.reserva-conferir {
+  margin-top: 15px;
+  background-color: #f1275f;
+  padding: 15px 0px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.reserva-conferir a {
+  color: #ffffff;
+  font-size: 17;
+}
+
+/* -------------------- AVALIAÇÃO SUCESSO ------------------ */
+
+#avaliacao-sucesso {
+  margin-bottom: 50px;
+}
+
+.avaliacao-sucesso-content {
+  margin: auto;
+  width: 1220px;
+}
+
+.avaliacao-sucesso-avaliacao-content {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.avaliacao-sucesso-avaliacao-content h1 {
+  font-size: 90px;
+  margin-top: 15px;
+  color: black;
+}
+
+.avaliacao-sucesso-discricao {
+  text-align: center;
+  margin: auto;
+  width: 350px;
+  margin-bottom: 40px;
+}
+
+.avaliacao-sucesso-discricao p {
+  color: #898989;
+  margin-top: 10px;
+}
+
+.avaliacao-sucesso-geral {
+  display: flex;
+  justify-content: space-between;
+}
+
+.avaliacao-sucesso-avaliacao-geral {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  margin-bottom: 50px;
+}
+
+.avaliacao-sucesso-avaliacao-geral span {
+  color: #000000;
+  margin-top: 5px;
+}
+
+.avaliacao-sucesso-avaliacao-geral img {
+  margin-top: 10px;
+}
+
+.divisao::after {
+  content: " ";
+  position: absolute;
+  display: block;
+  margin-left: 170px;
+  width: 1px;
+  height: 100px;
+  background-color: #898989;
+}
+
+.divisao-avalicao::after {
+  content: " ";
+  position: absolute;
+  display: block;
+  margin-left: 230px;
+  width: 1px;
+  height: 100px;
+  background-color: #898989;
+}
+
+/* --------------------- LOCALIZAÇÃO -------------------- */
+
+.localizacao-content {
+  margin: auto;
+  width: 1220px;
+}
+
+.localizacao-content a {
+  color: black;
+  text-decoration: underline;
+}
+
+.localizacao-titulo h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.localizacao-mapa {
+  margin-bottom: 30px;
+}
+
+.localizacao-estado {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.localizacao-descricao {
+  width: 1100px;
+  font-size: 16x;
+  margin-bottom: 20px;
+}
+
+/* --------------------- DEVE SABER -------------------- */
+#deve-saber {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.deve-saber-content {
+  width: 1220px;
+  margin: auto;
+}
+
+.titulo-deve-saber h3 {
+  font-size: 22px;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.informacoes-gerais {
+  display: flex;
+  justify-content: space-between;
+}
+
+.informacoes-gerais ul {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 10px;
+}
+
+.informacoes-gerais a {
+  color: black;
+  text-decoration: underline;
+}
+
+/* ------------------------ AVALIÇÃO -------------------- */
+
+#avaliacao {
+  margin-bottom: 50px;
+}
+
+.avaliacao-content {
+  width: 1220px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.avaliacao-titulo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avaliacao-titulo img {
+  border-radius: 100%;
+  margin-bottom: 10px;
+}
+
+.avaliacao-esquerda,
+.avalicao-direita {
+  width: 500px;
+}
+.avaliacao-esquerda a,
+.avalicao-direita a {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.avaliacao-info {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  font-size: 15px;
+}
+
+.avaliacao-info span {
+  margin-left: 5px;
+  color: #dbdbdb;
+  font-size: 14px;
+}
+
+.avaliacao-discricao {
+  line-height: 23px;
+  margin-bottom: 20px;
+}
+
+/* --------------------------------- FOOTER -------------------- */
+
+#footer {
+  background-color: #f7f7f7;
+  font-size: 15px;
+}
+
+.footer-content {
+  width: 1220px;
+  margin: auto;
+}
+
+.footer-caminho {
+  display: flex;
+  gap: 15px;
+  padding: 30px 0px;
+}
+
+.footer-coluna-link {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-coluna-link p {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.footer-coluna-link a {
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  margin-top: 50px;
+  display: flex;
+  gap: 110px;
+  margin-bottom: 30px;
+}
+
+.footer-coluna-link a:hover {
+  text-decoration: underline;
+}
+
+.footer-direitos {
+  display: flex;
+  padding: 20px 0px;
+  justify-content: space-between;
+}
+.footer-direitos-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-direitos-info a:hover {
+  text-decoration: underline;
+}
+
+.footer-direitos-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.footer-direitos-links-opc {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+
+
+
+#icone path.favorited {
+  fill: #ff385c;
+}
+
+.new_menu {
+  margin-top:30px ;
+  float: right;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  position: relative;;
+}
+
+.new_menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.new_menu li {
+  margin-bottom: 10px;
+}
+
+.new_menu a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+.new_menu a:hover {
+  color: #ccc;
+  background-color: #444;
+}
+
+.slider{
+  height: 100%;
+  width: 100%;
+  
 }
